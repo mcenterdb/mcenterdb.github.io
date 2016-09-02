@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <meta charset="utf-8">
+    <title>MCenter</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="mynavbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="" class="navbar-brand">MCenter</a>
+        </div> <!--End navbar header -->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#moviesandseries">Movies and Series</a></li>
+            <li><a href="#api">API</a></li>
+            <li><a href="#search">Search</a></li>
+          </ul>
+        </div>
+      </div> <!--End container  -->
+    </nav> <!--End navbar -->
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <div class="container text-center">
+        <h1 id="mytitle">Movies Center</h1>
+        <img id ="logoanimate" src="img/logo.png">
+        <p id="panimate">Encontre tudo sobre filmes, series e TV!</p>
+        <!--Search input -->
+        <div class="right-inner-addon ">
+          <i class="icon-search"></i>
+          <input type="search" class="form-control" id="searchTxt" placeholder="Buscar Filmes e Series" />
+          <button type="submit" id="searchButton" class="btn btn-default">Search</button>
+        </div> <!--End Search Input -->
+      </div> <!--End container jumbo -->
+    </div> <!--End Jumbotron -->
+    <!-- Filmes -->
+    <div class="container">
+      <section>
+        <div class="page-header" id="moviesandseries">
+          <h2 id="movandser">Movies and Series <small id="mandser2">Filmes Populares!</small></h2>
+          <div class="container">
+            <div class="row" id="movies">
+              <!--Movies-->
+            </div>
+          </div>
+        </div>
+      </section>
+    </div> <!--End Filmes -->
+    <div class="container">
+      <section>
+        <div class="page-header" id="feedback">
+          <h2>Feedback <small>Nos de o seu feedback!</small></h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <blockquote>
+              <p>Nos ajude a continuar disponibilizando todas as novidades sobre filmes e tv!</p>
+              <footer>MCenter Team</footer>
+            </blockquote>
+          </div>
+          <div class="col-lg-6">
+            <blockquote id="comments">
+              <textarea name="name" id="feedbackTxt" rows="8" cols="20"></textarea><br>
+              <button type="submit" id="feedbackBtn" class="btn btn-default">Enviar Feedback</button> <label for="feedbackBtn" id="feedbackCounter"></label>
+              <div id="feedbackMsg"></div>
+            </blockquote>
+          </div>
+        </div> <!--End of row -->
+      </section>
+    </div> <!--End container -->
+    <!-- call action -->
+    <section>
+      <div class="well">
+        <div class="container text-center">
+          <h3>Se inscreva para receber noticias e novidades!</h3>
+          <p>Informe seu nome e e-mail</p>
+          <form class="form-inline" action="" >
+            <div class="form-group">
+              <label for="inscricao">Inscreva-se</label>
+              <input type="text" class="form-control" id="inscricao" placeholder="Seu nome"> <label id="imgName"></label>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="text" class="form-control" id="email" placeholder="Seu e-mail"> <label id="imgEmail"></label>
+            </div>
+            <button type="submit" id="enviarBtn" class="btn btn-default">Enviar</button>
+            <div id="submitMsg">
+            </div>
+          </form>
+          <hr>
+        </div> <!--End container -->
+      </div> <!--End of well -->
+    </section> <!-- call to action -->
+    <!-- API -->
+    <div class="container">
+        <section>
+          <div class="page-header" id="api">
+            <h2>The Movie Database <small>Nosso site é abastecido pela API fornecida por TMDB.</small></h2>
+            <h4>API Overview</h4>
+            <p>
+              Our API is available for everyone to use. A TMDb user account is required to request an API key. Professional users are approved on a per application basis.
+              As always, you must attribute TMDb as the source of your data. Please be sure to read the <a  href="https://www.themoviedb.org/faq/api">API FAQ</a>.
+
+              If you're building a product or service around TMDb, we also recommend joining our <a href="https://plus.google.com/communities/113373898362999515939?hl=en">Google+ community</a>. It's the best place to learn about API changes, new features and deprecation notices.
+            </p>
+            <a href="https://www.themoviedb.org/">
+              <img border="0" src="img/tmdb.png">
+            </a>
+          </div>
+        </section>
+    </div> <!-- End API -->
+    <!-- Search -->
+    <div class="container">
+      <section>
+        <div class="page-header" id="search">
+          <h2>Search for Movies, TV Shows, and Movie Stars! <small>Buscar filmes, series, atores, estrelas...</small></h2>
+          <!--Search input -->
+          <div class="right-inner-addon ">
+            <i class="icon-search"></i>
+            <input type="search" class="form-control" id="searchTxtBottom" placeholder="Buscar Filmes e Series" />
+            <button type="submit" id="searchBottom" class="btn btn-default">Search</button>
+          </div> <!--End Search Input -->
+          <div class="well">
+            <!-- <div class="container" id="searchResult" > -->
+            <div class="row" id="searchResult" >
+              <!--Images-->
+            </div>
+          </div>
+        </div>
+      </section>
+    </div> <!--End Search -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/themoviedb.js"></script>
+    <script src="js/bounce.js"></script>
+    <script src="js/velocity.js"></script>
+
+  </body>
+</html>

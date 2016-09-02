@@ -1,0 +1,40 @@
+.results{
+  display: inline-block;;
+  /*width: 350px;*/
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-width: 10px;
+  border-style: groove;
+  background-color: white;
+  /*margin-right: 10px;*/
+  float: right;
+}
+.results .titulo h4{
+  margin-left: 190px;
+}
+.results p{
+  float: left;
+  margin-left: 3px;
+}
+.results img{
+  float: left;
+  max-width: 200px;
+  min-height: 180px;
+}
+.innerdiv{
+  border-width: 10%;
+  background-color: none;
+}
+.innerdiv2 p{
+  background-color: #80ff80;
+  border-radius: 3px;
+  float: right;
+}
+.innerdiv2 b{
+  float: right;
+}
+.popmovies{
+  display: inline-block;
+  width: 20%;
+  margin-bottom: 4px;
+}
